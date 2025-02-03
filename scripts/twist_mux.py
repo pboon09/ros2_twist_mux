@@ -72,6 +72,7 @@ class TwistMuxNode(Node):
 
         # Create timer (10Hz)
         self.timer = self.create_timer(0.1, self.timer_callback)
+        self.get_logger().info("Twist Mux Init")
 
     def emergency_callback(self, msg):
         if self.enable_emergency:
