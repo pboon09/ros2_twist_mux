@@ -73,9 +73,9 @@ twist_mux:
 ## Usage
 You can run by a launch file:
 ```
-ros2 launch my_twist_mux_package twist_mux.launch.py
+ros2 launch twist_mux twist_mux.launch.py
 ```
 If you prefer running it directly:
 ```
-ros2 run my_twist_mux_package twist_mux_node --ros-args --params-file /path/to/twist_mux.yaml
+ros2 run twist_mux twist_mux_node --ros-args --params-file /path/to/twist_mux.yaml
 ```
