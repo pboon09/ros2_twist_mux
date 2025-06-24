@@ -3,7 +3,7 @@ twist_mux:
     output_topic: "cmd_vel"
     emergency_topic: "emergency_stop"
     emergency_timeout: 0.5
-    enable_emergency: False
+    enable_emergency: True
     inputs: ["teleop", "nav"]
     
     teleop:
