@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from twist_mux.dummy_module import dummy_function, dummy_var
+from ros2_twist_mux.dummy_module import dummy_function, dummy_var
 import rclpy
 from rclpy.node import Node
 
