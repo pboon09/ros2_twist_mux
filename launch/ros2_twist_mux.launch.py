@@ -9,13 +9,29 @@ def generate_launch_description():
     
     twist_mux_node = Node(
         package='ros2_twist_mux',
-        executable='twist_mux.py',
-        name='twist_mux',
+        executable='ros2_twist_mux.py',
+        name='ros2_twist_mux',
         parameters=[config_path],
         output='screen',
         emulate_tty=True,
     )
+
+    joy = Node(
+        package='joy',
+        executable='joy_node',
+        name='joy',
+        output='screen',
+    )
+
+    test_twist_mux = Node(
+        package='ros2_twist_mux',
+        executable='test_twist_mux.py',
+        name='test_twist_mux',
+        output='screen',
+    )
     
     return LaunchDescription([
-        twist_mux_node
+        twist_mux_node,
+        joy,
+        test_twist_mux,
     ])

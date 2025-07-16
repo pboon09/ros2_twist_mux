@@ -28,7 +28,8 @@ ament_python_install_package(${PROJECT_NAME})
 # Install Python executables
 install(PROGRAMS
   scripts/dummy_script.py
-  scripts/twist_mux.py
+  scripts/ros2_twist_mux.py
+  scripts/test_twist_mux.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

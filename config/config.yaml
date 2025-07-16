@@ -1,17 +1,17 @@
-twist_mux:
+ros2_twist_mux:
   ros__parameters:
     output_topic: "cmd_vel"
     emergency_topic: "emergency_stop"
     emergency_timeout: 0.5
     enable_emergency: True
-    inputs: ["teleop", "nav"]
+    inputs: ["teleop", "joy"]
     
     teleop:
-      topic: "/cmd_vel_teleop"
+      topic: "/cmd_vel/teleop"
       priority: 100
       timeout: 0.5
     
-    nav:
-      topic: "/cmd_vel_nav"
+    joy:
+      topic: "/cmd_vel/joystick"
       priority: 50
       timeout: 0.5
